@@ -2,32 +2,32 @@
   "stats": {
     "suites": 11,
     "tests": 27,
-    "passes": 9,
+    "passes": 11,
     "pending": 0,
-    "failures": 18,
-    "start": "2024-03-12T07:47:24.972Z",
-    "end": "2024-03-12T07:47:28.686Z",
-    "duration": 3714
+    "failures": 16,
+    "start": "2024-03-12T07:58:03.594Z",
+    "end": "2024-03-12T07:58:05.408Z",
+    "duration": 1814
   },
   "tests": [
     {
       "title": "calls alert with each element passed",
       "fullTitle": "index.js myEach calls alert with each element passed",
-      "duration": 6,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "calls alert properly on object values",
       "fullTitle": "index.js myEach calls alert properly on object values",
-      "duration": 2,
+      "duration": 3,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "returns the original collection",
       "fullTitle": "index.js myEach returns the original collection",
-      "duration": 5,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -36,15 +36,12 @@
       "fullTitle": "index.js myMap successfully returns a correctly populated array",
       "duration": 1,
       "currentRetry": 0,
-      "err": {
-        "stack": "ReferenceError: myMap is not defined\n    at Context.<anonymous> (test/indexTest.js:43:25)\n    at process.processImmediate (node:internal/timers:478:21)",
-        "message": "myMap is not defined"
-      }
+      "err": {}
     },
     {
       "title": "does not modify the original array",
       "fullTitle": "index.js myMap does not modify the original array",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -53,10 +50,7 @@
       "fullTitle": "index.js myMap successfully returns a correctly populated array from modified object values",
       "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "stack": "ReferenceError: myMap is not defined\n    at Context.<anonymous> (test/indexTest.js:54:25)\n    at process.processImmediate (node:internal/timers:478:21)",
-        "message": "myMap is not defined"
-      }
+      "err": {}
     },
     {
       "title": "does not modify the original object",
@@ -68,7 +62,7 @@
     {
       "title": "returns the correct reduced value when passed an initial value",
       "fullTitle": "index.js myReduce returns the correct reduced value when passed an initial value",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
         "stack": "ReferenceError: myReduce is not defined\n    at Context.<anonymous> (test/indexTest.js:69:29)\n    at process.processImmediate (node:internal/timers:478:21)",
@@ -88,7 +82,7 @@
     {
       "title": "does not modify the original array",
       "fullTitle": "index.js myReduce does not modify the original array",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -112,7 +106,7 @@
     {
       "title": "returns the value if found",
       "fullTitle": "index.js myFind returns the value if found",
-      "duration": 1,
+      "duration": 2,
       "currentRetry": 0,
       "err": {
         "stack": "ReferenceError: myFind is not defined\n    at Context.<anonymous> (test/indexTest.js:104:7)\n    at process.processImmediate (node:internal/timers:478:21)",
@@ -132,7 +126,7 @@
     {
       "title": "returns undefined if the value is not present",
       "fullTitle": "index.js myFind returns undefined if the value is not present",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
         "stack": "ReferenceError: myFind is not defined\n    at Context.<anonymous> (test/indexTest.js:116:7)\n    at process.processImmediate (node:internal/timers:478:21)",
@@ -142,7 +136,7 @@
     {
       "title": "correctly filters for values that the callback evaluates as true",
       "fullTitle": "index.js myFilter correctly filters for values that the callback evaluates as true",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "stack": "ReferenceError: myFilter is not defined\n    at Context.<anonymous> (test/indexTest.js:132:29)\n    at process.processImmediate (node:internal/timers:478:21)",
@@ -152,7 +146,7 @@
     {
       "title": "correctly returns an empty array if no matching values are found",
       "fullTitle": "index.js myFilter correctly returns an empty array if no matching values are found",
-      "duration": 1,
+      "duration": 3,
       "currentRetry": 0,
       "err": {
         "stack": "ReferenceError: myFilter is not defined\n    at Context.<anonymous> (test/indexTest.js:137:29)\n    at process.processImmediate (node:internal/timers:478:21)",
@@ -182,7 +176,7 @@
     {
       "title": "returns the first element of the collection",
       "fullTitle": "index.js myFirst returns the first element of the collection",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "stack": "ReferenceError: myFirst is not defined\n    at Context.<anonymous> (test/indexTest.js:159:7)\n    at process.processImmediate (node:internal/timers:478:21)",
@@ -232,7 +226,7 @@
     {
       "title": "does not modify the original object",
       "fullTitle": "index.js myKeys does not modify the original object",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -257,29 +251,9 @@
   "pending": [],
   "failures": [
     {
-      "title": "successfully returns a correctly populated array",
-      "fullTitle": "index.js myMap successfully returns a correctly populated array",
-      "duration": 1,
-      "currentRetry": 0,
-      "err": {
-        "stack": "ReferenceError: myMap is not defined\n    at Context.<anonymous> (test/indexTest.js:43:25)\n    at process.processImmediate (node:internal/timers:478:21)",
-        "message": "myMap is not defined"
-      }
-    },
-    {
-      "title": "successfully returns a correctly populated array from modified object values",
-      "fullTitle": "index.js myMap successfully returns a correctly populated array from modified object values",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "stack": "ReferenceError: myMap is not defined\n    at Context.<anonymous> (test/indexTest.js:54:25)\n    at process.processImmediate (node:internal/timers:478:21)",
-        "message": "myMap is not defined"
-      }
-    },
-    {
       "title": "returns the correct reduced value when passed an initial value",
       "fullTitle": "index.js myReduce returns the correct reduced value when passed an initial value",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
         "stack": "ReferenceError: myReduce is not defined\n    at Context.<anonymous> (test/indexTest.js:69:29)\n    at process.processImmediate (node:internal/timers:478:21)",
@@ -309,7 +283,7 @@
     {
       "title": "returns the value if found",
       "fullTitle": "index.js myFind returns the value if found",
-      "duration": 1,
+      "duration": 2,
       "currentRetry": 0,
       "err": {
         "stack": "ReferenceError: myFind is not defined\n    at Context.<anonymous> (test/indexTest.js:104:7)\n    at process.processImmediate (node:internal/timers:478:21)",
@@ -329,7 +303,7 @@
     {
       "title": "returns undefined if the value is not present",
       "fullTitle": "index.js myFind returns undefined if the value is not present",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
         "stack": "ReferenceError: myFind is not defined\n    at Context.<anonymous> (test/indexTest.js:116:7)\n    at process.processImmediate (node:internal/timers:478:21)",
@@ -339,7 +313,7 @@
     {
       "title": "correctly filters for values that the callback evaluates as true",
       "fullTitle": "index.js myFilter correctly filters for values that the callback evaluates as true",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "stack": "ReferenceError: myFilter is not defined\n    at Context.<anonymous> (test/indexTest.js:132:29)\n    at process.processImmediate (node:internal/timers:478:21)",
@@ -349,7 +323,7 @@
     {
       "title": "correctly returns an empty array if no matching values are found",
       "fullTitle": "index.js myFilter correctly returns an empty array if no matching values are found",
-      "duration": 1,
+      "duration": 3,
       "currentRetry": 0,
       "err": {
         "stack": "ReferenceError: myFilter is not defined\n    at Context.<anonymous> (test/indexTest.js:137:29)\n    at process.processImmediate (node:internal/timers:478:21)",
@@ -379,7 +353,7 @@
     {
       "title": "returns the first element of the collection",
       "fullTitle": "index.js myFirst returns the first element of the collection",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "stack": "ReferenceError: myFirst is not defined\n    at Context.<anonymous> (test/indexTest.js:159:7)\n    at process.processImmediate (node:internal/timers:478:21)",
@@ -441,27 +415,41 @@
     {
       "title": "calls alert with each element passed",
       "fullTitle": "index.js myEach calls alert with each element passed",
-      "duration": 6,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "calls alert properly on object values",
       "fullTitle": "index.js myEach calls alert properly on object values",
-      "duration": 2,
+      "duration": 3,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "returns the original collection",
       "fullTitle": "index.js myEach returns the original collection",
-      "duration": 5,
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "successfully returns a correctly populated array",
+      "fullTitle": "index.js myMap successfully returns a correctly populated array",
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "does not modify the original array",
       "fullTitle": "index.js myMap does not modify the original array",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "successfully returns a correctly populated array from modified object values",
+      "fullTitle": "index.js myMap successfully returns a correctly populated array from modified object values",
       "duration": 0,
       "currentRetry": 0,
       "err": {}
@@ -476,7 +464,7 @@
     {
       "title": "does not modify the original array",
       "fullTitle": "index.js myReduce does not modify the original array",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -490,7 +478,7 @@
     {
       "title": "does not modify the original object",
       "fullTitle": "index.js myKeys does not modify the original object",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
