@@ -2,25 +2,25 @@
   "stats": {
     "suites": 11,
     "tests": 27,
-    "passes": 12,
+    "passes": 11,
     "pending": 0,
-    "failures": 15,
-    "start": "2024-03-12T08:28:16.532Z",
-    "end": "2024-03-12T08:28:17.473Z",
-    "duration": 941
+    "failures": 16,
+    "start": "2024-03-12T08:42:38.803Z",
+    "end": "2024-03-12T08:42:39.859Z",
+    "duration": 1056
   },
   "tests": [
     {
       "title": "calls alert with each element passed",
       "fullTitle": "index.js myEach calls alert with each element passed",
-      "duration": 2,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "calls alert properly on object values",
       "fullTitle": "index.js myEach calls alert properly on object values",
-      "duration": 1,
+      "duration": 7,
       "currentRetry": 0,
       "err": {}
     },
@@ -34,7 +34,7 @@
     {
       "title": "successfully returns a correctly populated array",
       "fullTitle": "index.js myMap successfully returns a correctly populated array",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -55,14 +55,14 @@
     {
       "title": "does not modify the original object",
       "fullTitle": "index.js myMap does not modify the original object",
-      "duration": 0,
+      "duration": 5,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "returns the correct reduced value when passed an initial value",
       "fullTitle": "index.js myReduce returns the correct reduced value when passed an initial value",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -157,7 +157,7 @@
     {
       "title": "correctly returns the size of the collection (amount of keys) when an object is passed",
       "fullTitle": "index.js mySize correctly returns the size of the collection (amount of keys) when an object is passed",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
         "stack": "ReferenceError: mySize is not defined\n    at Context.<anonymous> (test/indexTest.js:151:7)\n    at process.processImmediate (node:internal/timers:478:21)",
@@ -167,7 +167,7 @@
     {
       "title": "returns the first element of the collection",
       "fullTitle": "index.js myFirst returns the first element of the collection",
-      "duration": 0,
+      "duration": 35,
       "currentRetry": 0,
       "err": {
         "stack": "ReferenceError: myFirst is not defined\n    at Context.<anonymous> (test/indexTest.js:159:7)\n    at process.processImmediate (node:internal/timers:478:21)",
@@ -241,6 +241,13 @@
   ],
   "pending": [],
   "failures": [
+    {
+      "title": "returns the correct reduced value when passed an initial value",
+      "fullTitle": "index.js myReduce returns the correct reduced value when passed an initial value",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
     {
       "title": "returns the correct reduced value when not passed an initial value",
       "fullTitle": "index.js myReduce returns the correct reduced value when not passed an initial value",
@@ -318,7 +325,7 @@
     {
       "title": "correctly returns the size of the collection (amount of keys) when an object is passed",
       "fullTitle": "index.js mySize correctly returns the size of the collection (amount of keys) when an object is passed",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
         "stack": "ReferenceError: mySize is not defined\n    at Context.<anonymous> (test/indexTest.js:151:7)\n    at process.processImmediate (node:internal/timers:478:21)",
@@ -328,7 +335,7 @@
     {
       "title": "returns the first element of the collection",
       "fullTitle": "index.js myFirst returns the first element of the collection",
-      "duration": 0,
+      "duration": 35,
       "currentRetry": 0,
       "err": {
         "stack": "ReferenceError: myFirst is not defined\n    at Context.<anonymous> (test/indexTest.js:159:7)\n    at process.processImmediate (node:internal/timers:478:21)",
@@ -390,14 +397,14 @@
     {
       "title": "calls alert with each element passed",
       "fullTitle": "index.js myEach calls alert with each element passed",
-      "duration": 2,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "calls alert properly on object values",
       "fullTitle": "index.js myEach calls alert properly on object values",
-      "duration": 1,
+      "duration": 7,
       "currentRetry": 0,
       "err": {}
     },
@@ -411,7 +418,7 @@
     {
       "title": "successfully returns a correctly populated array",
       "fullTitle": "index.js myMap successfully returns a correctly populated array",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -432,14 +439,7 @@
     {
       "title": "does not modify the original object",
       "fullTitle": "index.js myMap does not modify the original object",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "returns the correct reduced value when passed an initial value",
-      "fullTitle": "index.js myReduce returns the correct reduced value when passed an initial value",
-      "duration": 0,
+      "duration": 5,
       "currentRetry": 0,
       "err": {}
     },
