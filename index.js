@@ -29,7 +29,7 @@ function myEach(collection, callback) {
     }
     myEach(collection, function(item, key) {
       if (startIdx === 0 || key !== 0) {
-        acc = callback(acc, item, collection);
+        acc = callback(acc, item, key);
       }
     });
     return acc;
@@ -75,7 +75,7 @@ function myEach(collection, callback) {
 
   function myLast(array, n) {
     if (typeof n === 'undefined') {
-        return array[array.legnth - 1];
+        return array[(array.length )- 1];
     } else {
         return array.slice(Math.max(array.length - n, 0));
     }
@@ -105,7 +105,7 @@ function myEach(collection, callback) {
 
   //Object Functions
   function myKeys(object) {
-    return myMap(object, ( key) => key);
+    return myMap(object, ( value, key) => key);
   }
 
   function myValues(object) {
