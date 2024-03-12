@@ -21,3 +21,18 @@ function myMap(collection, callback) {
 
     return result;
 }
+
+function myReduce(collection, callback, acc) {
+    let startIdx = 0;
+    if (typeof acc === 'undefined') {
+        acc = collection[0];
+        startIdx = 1;
+    }
+
+    myEach(collection, function(item, key) {
+        if (startIdx === 0 || key !== 0 ) {
+            acc = callback(acc, item, collection);
+        }
+    });
+    return acc;
+}
